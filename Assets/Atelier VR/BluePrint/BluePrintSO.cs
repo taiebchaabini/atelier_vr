@@ -24,4 +24,11 @@ public class BluePrintSO : ScriptableObject
         }
     }
      public RepClass[] list;
+     public RepClass rep;
+     public string rewrite ()
+    {
+        return Title.Replace("&", "[" + rep.Answer + "]");
+    }
+
+    
 }
