@@ -29,3 +29,9 @@ MonoBehaviour:
     model: {fileID: 0}
     mat: {fileID: 0}
     position: {fileID: 0}
+  rep:
+    Answer: 3
+    is_right: 1
+    model: {fileID: 6082398718183521112, guid: 4d9f7948c36d1426286619493ebee814, type: 3}
+    mat: {fileID: 2100000, guid: 584662273d60a0f47bd7fecbb570e66e, type: 2}
+    position: {fileID: 0}

@@ -9,14 +9,14 @@ public class QuestionManagerScript: MonoBehaviour
     public Levels[] BP_List;
 
     [Header("Room Settings")]
-    public int NumberOfRooms = 3;
+    private int NumberOfRooms = 3;
     public List<Room> RoomList;
 
     [System.Serializable]
     public class Levels
     {
         public BluePrintSO[] BP;
-        public int lvl;
+        // public int lvl;
         public GameObject room;
     }
     [System.Serializable]
@@ -39,11 +39,18 @@ public class QuestionManagerScript: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        RoomList = new List<Room>();
+        NumberOfRooms = BP_List.Length;
+        var x_pos = 0;
+
         for (int i = 0; i < NumberOfRooms; i++)
         {
+            var room = BP_List[i].room;
             int len = BP_List[i].BP.Length;
+       
             BluePrintSO Question = BP_List[i].BP[Random.Range(0, len)];
-            RoomList.Add(new Room(null, Question));    
+            RoomList.Add(new Room(room, Question));
+            Instantiate(room).transform.position = new Vector3(x_pos += -16, 0, 0);
         }
     }
 
