@@ -11,7 +11,7 @@ public class ConsoleScript : MonoBehaviour
 
     void Start()
     {
-
+        QuestionText.text = BPS.Title;    
     }
 
     // Update is called once per frame
@@ -22,6 +22,5 @@ public class ConsoleScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        QuestionText.text = BPS.Title;    
     }
 }

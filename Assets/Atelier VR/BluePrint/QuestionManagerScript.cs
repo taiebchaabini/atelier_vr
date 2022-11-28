@@ -18,6 +18,7 @@ public class QuestionManagerScript: MonoBehaviour
         public BluePrintSO[] BP;
         // public int lvl;
         public GameObject room;
+        public GameObject console;
     }
     [System.Serializable]
     public class Room
@@ -47,8 +48,12 @@ public class QuestionManagerScript: MonoBehaviour
         {
             var room = BP_List[i].room;
             int len = BP_List[i].BP.Length;
+            var console = room.transform.Find("Console");
+
        
             BluePrintSO Question = BP_List[i].BP[Random.Range(0, len)];
+            var ConsoleScript = console.GetComponent<ConsoleScript>();
+            ConsoleScript.BPS = Question;
             RoomList.Add(new Room(room, Question));
             Instantiate(room).transform.position = new Vector3(x_pos += -16, 0, 0);
         }
