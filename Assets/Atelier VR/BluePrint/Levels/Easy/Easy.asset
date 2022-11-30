@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72edc4376c1850848b18018c9244219e, type: 3}
   m_Name: Easy
   m_EditorClassIdentifier: 
-  Title: 'IF [ ] equals 5 :'
+  Title: IF [ ? ] equals 5
   list:
   - Answer: 1
     is_right: 0
@@ -30,7 +30,7 @@ MonoBehaviour:
     mat: {fileID: 0}
     position: {fileID: 0}
   rep:
-    Answer: 3
+    Answer: 5
     is_right: 1
     model: {fileID: 6082398718183521112, guid: 4d9f7948c36d1426286619493ebee814, type: 3}
     mat: {fileID: 2100000, guid: 584662273d60a0f47bd7fecbb570e66e, type: 2}

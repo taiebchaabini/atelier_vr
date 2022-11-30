@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3619815626001575011}
   - component: {fileID: 3619815626005787469}
   - component: {fileID: 8163235658452221421}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: console
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BPS: {fileID: 0}
   QuestionText: {fileID: 2479688770954589921}
-  answer: {fileID: 0}
+  Answer: 
+  door: {fileID: 0}
 --- !u!1 &4385402807214588322
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,7 +128,7 @@ GameObject:
   - component: {fileID: 5316591363523641575}
   - component: {fileID: 2178198172148308482}
   - component: {fileID: 7354511497423845024}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +228,7 @@ GameObject:
   - component: {fileID: 480631280817942937}
   - component: {fileID: 2734997861443058709}
   - component: {fileID: 2479688770954589921}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Question
   m_TagString: Untagged
   m_Icon: {fileID: 0}

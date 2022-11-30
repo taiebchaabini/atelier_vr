@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GrababbleAnswer : MonoBehaviour
 {
-    public string answer;
+	public TMP_Text answer;
 
     // Start is called before the first frame update
     void Start()
@@ -17,9 +18,10 @@ public class GrababbleAnswer : MonoBehaviour
         if (other.gameObject.layer == 7)
         {
             var consoleScript = other.GetComponent<ConsoleScript>();
-            if (consoleScript.Answer == answer)
+            if (consoleScript.Answer == answer.text)
             {
                 consoleScript.QuestionText.text = "Door open!";
+                consoleScript.door.transform.gameObject.SetActive(false);
             }
             else
             {

@@ -12,6 +12,7 @@ public class QuestionManagerScript: MonoBehaviour
     private int NumberOfRooms = 3;
     public List<Console> RoomList;
     public GameObject card;
+    public Transform card_position;
 
     [System.Serializable]
     public class Levels
@@ -21,6 +22,7 @@ public class QuestionManagerScript: MonoBehaviour
         // public GameObject console;
         public GameObject console;
         public Transform door;
+        public GameObject[] cards;
 
     }
     [System.Serializable]
@@ -46,21 +48,18 @@ public class QuestionManagerScript: MonoBehaviour
         for (int i = 0; i < NumberOfRooms; i++)
         {
             var console = BP_List[i].console;
-            int len = BP_List[i].BP.Length;
 
-            BluePrintSO Question = BP_List[i].BP[Random.Range(0, len)];
+            BluePrintSO Question = BP_List[i].BP[0];
+
             var ConsoleScript = console.GetComponent<ConsoleScript>();
+            ConsoleScript.door = BP_List[i].door;
             ConsoleScript.BPS = Question;
-            RoomList.Add(new Console(console, Question));
-
-            // foreach (var q in Question.list)
-            // {
-            //     var obj = Instantiate(card);
-            //     obj.transform.SetParent();
-            //     obj.transform.position = Vector3.zero;
             
-            // }
-
+            for (int b = 0; b <= 2; b++)
+            {
+                BP_List[i].cards[b].GetComponent<GrababbleAnswer>().answer.text = Question.list[b].Answer;
+            }
+            RoomList.Add(new Console(console, Question));
             // Instantiate(console).transform.position = new Vector3(x_pos += -16, 0, 0);
         }    
 }

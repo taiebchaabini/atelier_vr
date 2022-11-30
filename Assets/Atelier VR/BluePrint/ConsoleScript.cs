@@ -9,6 +9,7 @@ public class ConsoleScript : MonoBehaviour
     public BluePrintSO BPS;
     public TMPro.TMP_Text QuestionText;
     public string Answer;
+    public Transform door;
 
 
     void Start()
