@@ -11,6 +11,7 @@ public class QuestionManagerScript: MonoBehaviour
     [Header("Room Settings")]
     private int NumberOfRooms = 3;
     public List<Console> RoomList;
+    public GameObject card;
 
     [System.Serializable]
     public class Levels
@@ -51,6 +52,15 @@ public class QuestionManagerScript: MonoBehaviour
             var ConsoleScript = console.GetComponent<ConsoleScript>();
             ConsoleScript.BPS = Question;
             RoomList.Add(new Console(console, Question));
+
+            // foreach (var q in Question.list)
+            // {
+            //     var obj = Instantiate(card);
+            //     obj.transform.SetParent();
+            //     obj.transform.position = Vector3.zero;
+            
+            // }
+
             // Instantiate(console).transform.position = new Vector3(x_pos += -16, 0, 0);
         }    
 }
