@@ -10,6 +10,8 @@ public class ConsoleScript : MonoBehaviour
     public TMPro.TMP_Text QuestionText;
     public string Answer;
     public Transform door;
+    public AudioClip[] actions;
+    public AudioSource audioSource;
 
 
     void Start()
