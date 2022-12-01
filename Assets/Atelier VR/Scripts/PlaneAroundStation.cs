@@ -13,8 +13,6 @@ public class PlaneAroundStation : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        var rotate = transform.rotation;
-        rotate.y += 1;
-        transform.rotation = rotate;
+        transform.Rotate(0.0f, -0.1f, 0.0f, Space.World);
     }
 }
