@@ -13,6 +13,8 @@ public class QuestionManagerScript: MonoBehaviour
     public List<Console> RoomList;
     public GameObject card;
     public Transform card_position;
+    public Material endSkybox;
+    public AudioClip finishSound;
 
     [System.Serializable]
     public class Levels
