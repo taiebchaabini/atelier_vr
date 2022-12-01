@@ -12,25 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72edc4376c1850848b18018c9244219e, type: 3}
   m_Name: Hard
   m_EditorClassIdentifier: 
-  Title: i = 0 AND while i != 10
+  Title: 'i = 2 * 4 / 2 '
   list:
-  - Answer: i = i + 1
+  - Answer: i = 4
     is_right: 0
     model: {fileID: 0}
     mat: {fileID: 0}
     position: {fileID: 0}
-  - Answer: i = i - 1
+  - Answer: i = 6
     is_right: 0
     model: {fileID: 0}
     mat: {fileID: 0}
     position: {fileID: 0}
-  - Answer: i = i - 2
+  - Answer: i = 2
     is_right: 0
     model: {fileID: 0}
     mat: {fileID: 0}
     position: {fileID: 0}
   rep:
-    Answer: i = i + 1
+    Answer: i = 4
     is_right: 1
     model: {fileID: 0}
     mat: {fileID: 0}

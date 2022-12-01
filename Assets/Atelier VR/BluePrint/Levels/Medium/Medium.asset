@@ -12,26 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72edc4376c1850848b18018c9244219e, type: 3}
   m_Name: Medium
   m_EditorClassIdentifier: 
-  Title: IF [ ? ] > 5
+  Title: IF i = 5 ; i + 4 =  [?]
   list:
-  - Answer: 10
-    is_right: 0
-    model: {fileID: 0}
-    mat: {fileID: 0}
-    position: {fileID: 0}
   - Answer: 5
     is_right: 0
     model: {fileID: 0}
     mat: {fileID: 0}
     position: {fileID: 0}
-  - Answer: 2
+  - Answer: 9
+    is_right: 0
+    model: {fileID: 0}
+    mat: {fileID: 0}
+    position: {fileID: 0}
+  - Answer: 7
     is_right: 0
     model: {fileID: 0}
     mat: {fileID: 0}
     position: {fileID: 0}
   rep:
-    Answer: 10
+    Answer: 9
     is_right: 1
-    model: {fileID: 0}
-    mat: {fileID: 0}
+    model: {fileID: 6082398718183521112, guid: 4d9f7948c36d1426286619493ebee814, type: 3}
+    mat: {fileID: 2100000, guid: 584662273d60a0f47bd7fecbb570e66e, type: 2}
     position: {fileID: 0}

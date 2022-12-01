@@ -59,7 +59,7 @@ public class GrababbleAnswer : MonoBehaviour
         audio.clip = consoleScript.actions[0];
         audio.Play();
         consoleScript.transform.gameObject.SetActive(false);
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(16);
         Application.Quit();
     }
 
